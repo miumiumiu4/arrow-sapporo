@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>無料見積・お申し込み｜エアコン清掃救急隊（株式会社アロー）</title>
+<meta name="description" content="札幌の天カセ分解洗浄・水漏れ対応・家庭用エアコン清掃の無料見積とお申し込み。台数とオプションを選ぶと、その場で概算がわかります。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0d2b45;--blue:#1769aa;--sky:#e9f4fc;--ink:#1d2a36;--muted:#5f6f7e;--line:#dde6ee;--bg:#f4f8fb;--cta:#e8590c;--cta-d:#c94a06;--red:#d62e2e;--red-soft:#fdecec;--ok:#1f8a70}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
+  header{background:var(--navy);color:#fff}
+  header .in{max-width:760px;margin:0 auto;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  header a{color:#fff;text-decoration:none;font-size:14px;font-weight:700}
+  header b{font-size:16px}
+  .wrap{max-width:760px;margin:0 auto;padding:24px 16px 120px}
+  h1{font-size:clamp(22px,5vw,28px);line-height:1.4;margin:6px 0 6px;color:var(--navy);font-weight:900}
+  .lead{color:var(--muted);margin:0 0 18px;font-size:15px}
+  .steps{display:flex;gap:6px;margin-bottom:18px;flex-wrap:wrap}
+  .steps span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:12px;font-weight:700;color:var(--muted)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:16px}
+  .card h2{font-size:17px;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid var(--sky);color:var(--navy)}
+  .card h2 small{font-weight:500;color:var(--muted);font-size:13px;margin-left:6px}
+  .types{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  @media(max-width:560px){.types{grid-template-columns:1fr}}
+  .types label{display:block;border:2px solid var(--line);border-radius:14px;padding:12px 14px;cursor:pointer;margin:0;font-weight:800;font-size:15px;line-height:1.5}
+  .types label small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+  .types input{position:absolute;opacity:0;pointer-events:none}
+  .types label:has(input:checked){border-color:var(--blue);background:var(--sky)}
+  .types label.urg:has(input:checked){border-color:var(--red);background:var(--red-soft)}
+  .urgent-box{display:none;background:var(--red-soft);border:1px solid #f3c1c1;border-radius:12px;padding:14px 16px;margin-top:12px;font-size:14px}
+  .urgent-box.show{display:block}
+  .urgent-box a{display:inline-block;margin-top:8px;background:var(--red);color:#fff;text-decoration:none;font-weight:800;border-radius:10px;padding:10px 16px}
+  .grp{font-weight:800;color:var(--navy);margin:14px 0 2px;font-size:15px;display:flex;align-items:center;gap:8px}
+  .grp:first-of-type{margin-top:0}
+  .grp::before{content:"";width:6px;height:18px;border-radius:3px;background:var(--blue)}
+  .row-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
+  .row-item.sub{padding-left:14px}
+  .row-item .t b{display:block;font-size:15px}
+  .row-item.sub .t b{font-weight:600}
+  .row-item .t span{font-size:13px;color:var(--muted)}
+  .ctr{display:flex;align-items:center;gap:8px}
+  .ctr button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:18px;font-weight:700;color:var(--blue);cursor:pointer}
+  .ctr button:disabled{opacity:.3;cursor:default}
+  .ctr output{min-width:28px;text-align:center;font-weight:800;font-size:17px}
+  .est{background:var(--navy);color:#fff;border-radius:14px;padding:16px 18px;margin:16px 0 4px}
+  .est .top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px}
+  .est .l{font-weight:700}
+  .est .v{font-size:32px;font-weight:900;color:#ffd166}
+  .est .v small{font-size:13px;font-weight:600;color:#fff}
+  .est ul{list-style:none;margin:8px 0 0;padding:8px 0 0;border-top:1px solid rgba(255,255,255,.2);font-size:13px;opacity:.9}
+  .est li{display:flex;justify-content:space-between;gap:10px}
+  .est li:empty{display:none}
+  .tip{font-size:13px;color:var(--muted);margin-top:8px}
+  label{display:block;font-weight:700;font-size:14px;margin:14px 0 6px}
+  label small{font-weight:400;color:var(--muted)}
+  .req{background:var(--red);color:#fff!important;border-radius:4px;padding:1px 6px;font-size:11px;font-weight:700;margin-left:4px}
+  input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font-size:16px;background:#fff;color:var(--ink);font-family:inherit}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:1px}
+  textarea{min-height:96px}
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:560px){.g2{grid-template-columns:1fr}}
+  .chks{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}
+  @media(max-width:560px){.chks{grid-template-columns:1fr}}
+  .chks label,.radios label{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px;margin:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;cursor:pointer}
+  .chks input,.radios input{width:18px;height:18px;padding:0;accent-color:var(--blue);flex:0 0 18px}
+  .radios{display:flex;flex-wrap:wrap;gap:8px}
+  .dateblk{background:var(--bg);border-radius:12px;padding:4px 14px 14px;margin-top:12px}
+  .dateblk input[type=date]{max-width:240px}
+  .btn{display:block;width:100%;background:var(--cta);color:#fff;border:0;border-radius:14px;padding:17px;font-size:18px;font-weight:800;cursor:pointer;margin-top:18px;box-shadow:0 4px 0 var(--cta-d);font-family:inherit}
+  .btn:disabled{opacity:.5}
+  .fine{font-size:13px;color:var(--muted)}
+  .msg{display:none;padding:16px;border-radius:12px;margin-top:16px}
+  .msg.ok{display:block;background:#e8f5f0;color:var(--ok)}
+  .msg.ng{display:block;background:var(--red-soft);color:var(--red)}
+  .msg pre{white-space:pre-wrap;background:#fff;color:var(--ink);border-radius:8px;padding:12px;font-size:13px;font-family:inherit}
+  .msg button{border:0;background:var(--blue);color:#fff;border-radius:8px;padding:8px 14px;font-weight:700;cursor:pointer;font-family:inherit}
+  .sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(13,43,69,.97);color:#fff;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+  .sticky .in{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .sticky b{font-size:22px;color:#ffd166}
+  .sticky a{background:var(--cta);color:#fff;text-decoration:none;font-weight:800;border-radius:10px;padding:10px 16px;white-space:nowrap}
+  footer{text-align:center;font-size:13px;color:var(--muted);margin-top:24px}
+</style>
+</head>
+<body>
+<header><div class="in"><b>エアコン清掃救急隊</b><a href="index.html">← ホームへ戻る</a></div></header>
+
+<div class="wrap">
+  <h1>無料見積・お申し込み</h1>
+  <p class="lead">台数とオプションを選ぶと、その場で概算がわかります。送信いただいた内容をもとに、概算費用と訪問日時の候補を折り返しご連絡します。<b>お見積りは無料です。</b></p>
+  <div class="steps"><span>1. ご用件</span><span>2. 台数とオプション</span><span>3. 設置場所と症状</span><span>4. ご希望日時</span><span>5. ご連絡先</span></div>
+
+  <form id="f" novalidate>
+  <div class="card">
+    <h2>1. ご用件をお選びください</h2>
+    <div class="types">
+      <label><input type="radio" name="type" value="見積もりがほしい" checked>見積もりがほしい<small>まずは料金を知りたい</small></label>
+      <label><input type="radio" name="type" value="作業を申し込みたい">作業を申し込みたい<small>日程を決めて予約したい</small></label>
+      <label class="urg"><input type="radio" name="type" value="水漏れ・故障で急いでいる">水漏れ・故障で急いでいる<small>応急対応を頼みたい</small></label>
+    </div>
+    <label style="margin-top:12px"><input type="checkbox" name="regular" value="定期清掃プランも相談したい" id="regular" style="width:18px;height:18px;vertical-align:-3px;accent-color:var(--blue);margin-right:6px">定期清掃プランも相談したい</label>
+    <div class="urgent-box" id="urgentBox">
+      お急ぎの場合は、お電話がいちばん早くつながります。天井から水が落ちている場合は、エアコンの運転を止め、下にバケツやタオルを置いてお待ちください。<br>
+      <a class="js-tel" href="#">☎ <span class="js-tel-num">お電話</span></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. 台数とオプションを選ぶ<small>わかる範囲でかまいません</small></h2>
+
+    <p class="grp">業務用 天カセ・天吊エアコン</p>
+    <div class="row-item"><div class="t"><b>分解洗浄の台数</b><span><span data-price="tenkase"></span>円〜/台（2台以上で1台あたり<span data-price="tenkaseMulti"></span>円引き）</span></div>
+      <div class="ctr"><button type="button" data-k="tk" data-d="-1">−</button><output id="o_tk">0</output><button type="button" data-k="tk" data-d="1">＋</button></div></div>
+    <div class="row-item sub"><div class="t"><b>うち、防カビ仕上げ</b><span>＋<span data-price="tenkaseCoat"></span>円/台</span></div>
+      <div class="ctr"><button type="button" data-k="tkCoat" data-d="-1">−</button><output id="o_tkCoat">0</output><button type="button" data-k="tkCoat" data-d="1">＋</button></div></div>
+    <div class="row-item sub"><div class="t"><b>室外機の洗浄</b><span>＋<span data-price="tenkaseOutdoor"></span>円/台</span></div>
+      <div class="ctr"><button type="button" data-k="tkOut" data-d="-1">−</button><output id="o_tkOut">0</output><button type="button" data-k="tkOut" data-d="1">＋</button></div></div>
+
+    <p class="grp">水漏れ・ドレン詰まり</p>
+    <div class="row-item"><div class="t"><b>応急対応</b><span><span data-price="leak"></span>円〜/回（札幌市内・営業時間内の基本料金）</span></div>
+      <div class="ctr"><button type="button" data-k="leak" data-d="-1">−</button><output id="o_leak">0</output><button type="button" data-k="leak" data-d="1">＋</button></div></div>
+
+    <p class="grp">家庭用 壁掛けエアコン</p>
+    <div class="row-item"><div class="t"><b>分解洗浄の台数</b><span><span data-price="wall"></span>円/台（2台以上で1台あたり<span data-price="wallMulti"></span>円引き）</span></div>
+      <div class="ctr"><button type="button" data-k="wl" data-d="-1">−</button><output id="o_wl">0</output><button type="button" data-k="wl" data-d="1">＋</button></div></div>
+    <div class="row-item sub"><div class="t"><b>うち、お掃除ロボ機能付き</b><span>＋<span data-price="wallAuto"></span>円/台</span></div>
+      <div class="ctr"><button type="button" data-k="wlAuto" data-d="-1">−</button><output id="o_wlAuto">0</output><button type="button" data-k="wlAuto" data-d="1">＋</button></div></div>
+    <div class="row-item sub"><div class="t"><b>うち、防カビ仕上げ</b><span>＋<span data-price="wallCoat"></span>円/台</span></div>
+      <div class="ctr"><button type="button" data-k="wlCoat" data-d="-1">−</button><output id="o_wlCoat">0</output><button type="button" data-k="wlCoat" data-d="1">＋</button></div></div>
+    <div class="row-item sub" style="border-bottom:0"><div class="t"><b>室外機の洗浄</b><span>＋<span data-price="wallOutdoor"></span>円/台</span></div>
+      <div class="ctr"><button type="button" data-k="wlOut" data-d="-1">−</button><output id="o_wlOut">0</output><button type="button" data-k="wlOut" data-d="1">＋</button></div></div>
+
+    <div class="est" id="est">
+      <div class="top"><div class="l">💰 概算の目安</div><div class="v">¥<span id="e_total">0</span><small> 円（税込）</small></div></div>
+      <ul id="e_lines"></ul>
+    </div>
+    <p class="tip">💡 標準能力（天カセは4方向3.0馬力程度まで）・通常汚れの場合の目安です。厨房などで汚れがひどい場合や、天井内部の腐食・配管工事が必要な場合は、現地で確認してからお見積りをお出しします。台数がわからない場合は0のままで送信し、備考にお書きください。</p>
+  </div>
+
+  <div class="card">
+    <h2>3. 設置場所と気になる症状</h2>
+    <div class="g2">
+      <div><label>業種・建物</label>
+        <select name="business">
+          <option>飲食店</option><option>美容室・サロン</option><option>オフィス・事務所</option><option>クリニック・医院</option><option>店舗（その他）</option><option>ご家庭</option><option>その他</option>
+        </select></div>
+      <div><label>メーカー・型番 <small>任意・わかれば</small></label><input type="text" name="model" placeholder="例：ダイキン 4方向"></div>
+    </div>
+    <label>設置場所 <small>あてはまるものすべて</small></label>
+    <div class="chks">
+      <label><input type="checkbox" name="place" value="客席・売り場">客席・売り場</label>
+      <label><input type="checkbox" name="place" value="厨房">厨房</label>
+      <label><input type="checkbox" name="place" value="施術・診察スペース">施術・診察スペース</label>
+      <label><input type="checkbox" name="place" value="事務スペース">事務スペース</label>
+      <label><input type="checkbox" name="place" value="バックヤード">バックヤード</label>
+      <label><input type="checkbox" name="place" value="居室（ご家庭）">居室（ご家庭）</label>
+    </div>
+    <label>気になる症状 <small>あてはまるものすべて</small></label>
+    <div class="chks">
+      <label><input type="checkbox" name="symptom" value="ニオイがする">ニオイがする</label>
+      <label><input type="checkbox" name="symptom" value="冷えない・暖まらない">冷えない・暖まらない</label>
+      <label><input type="checkbox" name="symptom" value="水漏れしている">水漏れしている</label>
+      <label><input type="checkbox" name="symptom" value="吹き出し口が黒ずんでいる">吹き出し口が黒ずんでいる</label>
+      <label><input type="checkbox" name="symptom" value="異音がする">異音がする</label>
+      <label><input type="checkbox" name="symptom" value="とくになし（定期的に洗いたい）">とくになし（定期的に洗いたい）</label>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>4. ご希望日時</h2>
+    <p class="fine" style="margin:0">営業前・閉店後・定休日など、お店を止めずにすむ時間をお選びください。第二・第三希望もあると日程が決まりやすくなります。</p>
+    <div class="dateblk">
+      <label>第一希望<span class="req">必須</span></label>
+      <input type="date" name="date1">
+      <div class="radios" style="margin-top:8px" data-time="time1"></div>
+    </div>
+    <div class="dateblk">
+      <label>第二希望 <small>任意</small></label>
+      <input type="date" name="date2">
+      <div class="radios" style="margin-top:8px" data-time="time2"></div>
+    </div>
+    <div class="dateblk">
+      <label>第三希望 <small>任意</small></label>
+      <input type="date" name="date3">
+      <div class="radios" style="margin-top:8px" data-time="time3"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>5. ご連絡先</h2>
+    <label>会社名・店舗名 <small>ご家庭の方は空欄でかまいません</small></label>
+    <input type="text" name="company" autocomplete="organization">
+    <div class="g2">
+      <div><label>ご担当者名<span class="req">必須</span></label><input type="text" name="name" autocomplete="name"></div>
+      <div><label>電話番号<span class="req">必須</span></label><input type="tel" name="phone" autocomplete="tel"></div>
+    </div>
+    <label>メールアドレス<span class="req">必須</span> <small>見積もり・作業報告書の送り先</small></label>
+    <input type="email" name="email" autocomplete="email">
+    <label>作業場所のご住所<span class="req">必須</span></label>
+    <input type="text" name="address" autocomplete="street-address" placeholder="例：札幌市中央区〇〇 〇丁目〇-〇 〇〇ビル2階">
+    <div class="g2">
+      <div><label>駐車場 <small>駐車場代は実費</small></label>
+        <select name="parking"><option>敷地内に駐車可</option><option>近隣コインパーキング利用</option><option>わからない・相談したい</option></select></div>
+      <div><label>ご連絡方法の希望</label>
+        <select name="contact"><option>電話</option><option>メール</option><option>どちらでも</option></select></div>
+    </div>
+    <label>ご要望・備考</label>
+    <textarea name="note" placeholder="台数がわからない、天井が高い、厨房で油汚れがひどい、〇時までに終わらせたい など"></textarea>
+
+    <button class="btn" id="submit" type="submit">この内容で送信する（無料）</button>
+    <p class="fine" style="margin-top:10px">送信後、内容を確認して、概算費用と訪問日時の候補を折り返しご連絡します。この時点では料金は発生しません。</p>
+    <div id="msg" class="msg"></div>
+  </div>
+  </form>
+
+  <footer>エアコン清掃救急隊（株式会社アロー）<br><span class="js-area"></span></footer>
+</div>
+
+<div class="sticky"><div class="in"><span>概算 <b>¥<span id="s_total">0</span></b></span><a href="#submit">送信へ進む ▼</a></div></div>
+
+<script src="config.js"></script>
+<script>
+const S = window.SITE, P = S.PRICE;
+const yen = n => n.toLocaleString("ja-JP");
+const $ = s => document.querySelector(s);
+
+// 時間帯の選択肢（早朝・夜間も選べる）
+const TIMES = ["早朝（〜9時）","午前（9〜12時）","午後（12〜15時）","夕方（15〜18時）","夜間（18時〜）","相談したい"];
+document.querySelectorAll("[data-time]").forEach(box => {
+  const n = box.dataset.time;
+  box.innerHTML = TIMES.map((t,i) => '<label><input type="radio" name="'+n+'" value="'+t+'"'+(i===1?" checked":"")+'>'+t+'</label>').join("");
+});
+
+// 作業希望日は明日以降（日本時間）
+(() => {
+  const d = new Date(Date.now() + 9*3600*1000); d.setUTCDate(d.getUTCDate() + 1);
+  const min = d.toISOString().slice(0,10);
+  ["date1","date2","date3"].forEach(n => { $('input[name='+n+']').min = min; });
+})();
+
+// ご用件：URLの ?type= で初期選択（ホームのボタンから）
+const typeMap = { estimate:"見積もりがほしい", apply:"作業を申し込みたい", urgent:"水漏れ・故障で急いでいる" };
+const qType = new URLSearchParams(location.search).get("type");
+if (qType === "regular") $("#regular").checked = true;
+if (typeMap[qType]) $('input[name=type][value="'+typeMap[qType]+'"]').checked = true;
+const st = { tk:0, tkCoat:0, tkOut:0, leak:0, wl:0, wlAuto:0, wlCoat:0, wlOut:0 };
+if (qType === "urgent") st.leak = 1;
+function syncUrgent(){
+  const urgent = $('input[name=type]:checked').value === typeMap.urgent;
+  $("#urgentBox").classList.toggle("show", urgent);
+  if (urgent && st.leak === 0) { st.leak = 1; render(); }
+}
+document.querySelectorAll("input[name=type]").forEach(r => r.addEventListener("change", syncUrgent));
+
+// 子の項目は親の台数まで
+const PARENT = { tkCoat:"tk", tkOut:"tk", wlAuto:"wl", wlCoat:"wl", wlOut:"wl" };
+const MAX = { tk:30, wl:20, leak:5 };
+
+function calc(){
+  const L = [];
+  if (st.tk) { const u = P.tenkase - (st.tk >= 2 ? P.tenkaseMulti : 0); L.push(["天カセ分解洗浄 "+st.tk+"台（"+yen(u)+"円/台）", u*st.tk]); }
+  if (st.tkCoat) L.push(["天カセ 防カビ仕上げ "+st.tkCoat+"台", P.tenkaseCoat*st.tkCoat]);
+  if (st.tkOut) L.push(["天カセ 室外機 "+st.tkOut+"台", P.tenkaseOutdoor*st.tkOut]);
+  if (st.leak) L.push(["水漏れ・ドレン詰まり応急対応 "+st.leak+"回", P.leak*st.leak]);
+  if (st.wl) { const u = P.wall - (st.wl >= 2 ? P.wallMulti : 0); L.push(["家庭用 分解洗浄 "+st.wl+"台（"+yen(u)+"円/台）", u*st.wl]); }
+  if (st.wlAuto) L.push(["家庭用 お掃除ロボ機能付き "+st.wlAuto+"台", P.wallAuto*st.wlAuto]);
+  if (st.wlCoat) L.push(["家庭用 防カビ仕上げ "+st.wlCoat+"台", P.wallCoat*st.wlCoat]);
+  if (st.wlOut) L.push(["家庭用 室外機 "+st.wlOut+"台", P.wallOutdoor*st.wlOut]);
+  return { lines:L, total:L.reduce((a,l)=>a+l[1],0) };
+}
+function render(){
+  Object.keys(st).forEach(k => { $("#o_"+k).textContent = st[k]; });
+  const c = calc();
+  $("#e_total").textContent = $("#s_total").textContent = yen(c.total);
+  $("#e_lines").innerHTML = c.lines.map(l => "<li><span>"+l[0]+"</span><span>"+yen(l[1])+"円</span></li>").join("");
+  document.querySelectorAll(".ctr button").forEach(b => {
+    const k = b.dataset.k, d = +b.dataset.d;
+    b.disabled = d < 0 ? st[k] <= 0 : (PARENT[k] ? st[k] >= st[PARENT[k]] : st[k] >= MAX[k]);
+  });
+}
+document.querySelectorAll(".ctr button").forEach(b => b.addEventListener("click", () => {
+  const k = b.dataset.k;
+  st[k] = Math.max(0, st[k] + (+b.dataset.d));
+  Object.keys(PARENT).forEach(c => { if (st[c] > st[PARENT[c]]) st[c] = st[PARENT[c]]; });
+  render();
+}));
+render(); syncUrgent();
+
+// 送信
+function fail(el, text){
+  const m = $("#msg"); m.className = "msg ng"; m.textContent = "⚠ " + text;
+  if (el) { el.scrollIntoView({behavior:"smooth", block:"center"}); setTimeout(() => { try { el.focus(); } catch(_){} }, 400); }
+  alert(text);
+}
+function buildText(d, c){
+  const v = x => x || "（未記入）";
+  return [
+    "【ご用件】" + d.type + (d.regular ? "／定期清掃プランも相談したい" : ""),
+    "",
+    "【台数とオプション】",
+    ...(c.lines.length ? c.lines.map(l => "・" + l[0] + "　" + yen(l[1]) + "円") : ["・台数未入力（備考参照）"]),
+    "概算の目安：" + yen(c.total) + "円（税込）",
+    "",
+    "【業種・建物】" + d.business,
+    "【メーカー・型番】" + v(d.model),
+    "【設置場所】" + v(d.places),
+    "【気になる症状】" + v(d.symptoms),
+    "",
+    "【ご希望日時】",
+    "第一希望：" + d.date1 + " " + d.time1,
+    "第二希望：" + (d.date2 ? d.date2 + " " + d.time2 : "なし"),
+    "第三希望：" + (d.date3 ? d.date3 + " " + d.time3 : "なし"),
+    "",
+    "【会社名・店舗名】" + v(d.company),
+    "【ご担当者名】" + d.name,
+    "【電話番号】" + d.phone,
+    "【メール】" + d.email,
+    "【ご住所】" + d.address,
+    "【駐車場】" + d.parking,
+    "【ご連絡方法】" + d.contact,
+    "【ご要望・備考】" + v(d.note)
+  ].join("\n");
+}
+
+$("#f").addEventListener("submit", async e => {
+  e.preventDefault();
+  const fm = $("#f"), c = calc();
+  const REQ = { date1:"第一希望の日付", name:"ご担当者名", phone:"電話番号", email:"メールアドレス", address:"作業場所のご住所" };
+  for (const n of Object.keys(REQ)) {
+    const el = fm.querySelector('[name='+n+']'), val = (el.value || "").trim();
+    if (!val) return fail(el, REQ[n] + "を入力してください。");
+    if (n === "email" && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val)) return fail(el, "メールアドレスの形式をご確認ください。");
+    if (el.type === "date" && el.min && val < el.min) return fail(el, "日付は " + el.min.replace(/-/g,"/") + " 以降を選んでください。");
+  }
+  const fd = new FormData(fm);
+  const d = Object.fromEntries(fd.entries());
+  d.places = fd.getAll("place").join("、");
+  d.symptoms = fd.getAll("symptom").join("、");
+  const text = buildText(d, c);
+  const subject = "【" + d.type + "】" + (d.company || d.name) + " 様（" + S.NAME + "）";
+  const btn = $("#submit"), msg = $("#msg");
+
+  if (S.GAS_URL) {
+    btn.disabled = true; btn.textContent = "送信中…";
+    try {
+      const payload = Object.assign({}, d, { subject, body:text, total:c.total, lines:c.lines, submitted_at:new Date().toISOString(), page:location.href });
+      const r = await fetch(S.GAS_URL, { method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body:JSON.stringify(payload) });
+      const t = await r.text(); let j; try { j = JSON.parse(t); } catch(_) { j = { ok:true }; }
+      if (!j.ok) throw new Error(j.error || "送信失敗");
+      msg.className = "msg ok";
+      msg.innerHTML = "送信しました。ありがとうございます。内容を確認して、概算費用と訪問日時の候補を折り返しご連絡します。";
+      fm.reset(); Object.keys(st).forEach(k => st[k] = 0); render();
+      btn.textContent = "送信済み";
+    } catch (err) {
+      btn.disabled = false; btn.textContent = "この内容で送信する（無料）";
+      showManual(text, "送信できませんでした。お手数ですが、下の内容をお電話かメールでお知らせください。");
+    }
+    return;
+  }
+  if (S.EMAIL) {
+    location.href = "mailto:" + S.EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(text);
+    showManual(text, "メールアプリが開きます。内容を確認して、そのまま送信してください。開かない場合は、下の内容をコピーして " + S.EMAIL + " へお送りください。");
+    return;
+  }
+  showManual(text, "（送信先がまだ設定されていません：config.js の EMAIL か GAS_URL を入れてください）送信される内容は以下のとおりです。");
+});
+
+function showManual(text, lead){
+  const m = $("#msg"); m.className = "msg ok";
+  m.innerHTML = "<p style='margin:0 0 8px'></p><pre></pre><button type='button'>内容をコピー</button>";
+  m.querySelector("p").textContent = lead;
+  m.querySelector("pre").textContent = text;
+  m.querySelector("button").addEventListener("click", async ev => {
+    try { await navigator.clipboard.writeText(text); ev.target.textContent = "コピーしました"; } catch(_) { ev.target.textContent = "長押しでコピーしてください"; }
+  });
+  m.scrollIntoView({behavior:"smooth", block:"center"});
+}
+</script>
+</body>
+</html>

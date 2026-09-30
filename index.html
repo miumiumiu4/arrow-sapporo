@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>札幌の天カセ分解洗浄・水漏れ対応｜エアコン清掃救急隊（株式会社アロー）</title>
+<meta name="description" content="札幌の飲食店・美容室・オフィス・クリニック向けに、天井カセットエアコン（天カセ）を分解してまるごと洗浄。水漏れ・ドレン詰まりの応急対応、家庭用エアコン清掃も。早朝・深夜もご相談ください。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0d2b45;--blue:#1769aa;--sky:#e9f4fc;--sky2:#d4eaf9;
+    --ink:#1d2a36;--muted:#5f6f7e;--line:#dde6ee;--bg:#ffffff;--soft:#f6f9fc;
+    --cta:#e8590c;--cta-d:#c94a06;--red:#d62e2e;--red-soft:#fdecec;--ok:#1f8a70;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+  img,svg{max-width:100%}
+  a{color:var(--blue)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+  .sec{padding:72px 0}
+  .sec.alt{background:var(--soft)}
+  .eyebrow{display:block;text-align:center;color:var(--blue);font-weight:700;font-size:13px;letter-spacing:.14em}
+  h2{font-size:clamp(24px,4.4vw,34px);line-height:1.45;text-align:center;margin:6px 0 14px;font-weight:900;color:var(--navy)}
+  .sub{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 40px}
+  mark{background:linear-gradient(transparent 62%,#ffe08a 62%);color:inherit;padding:0 2px}
+
+  /* ヘッダー */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .hd{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+  .logo b{display:block;font-size:17px;font-weight:900;line-height:1.2}
+  .logo small{display:block;font-size:11px;color:var(--muted);line-height:1.2}
+  .hd nav{display:flex;gap:18px;font-size:14px;font-weight:700}
+  .hd nav a{color:var(--ink);text-decoration:none}
+  .hd .btns{display:flex;gap:8px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font-weight:800;text-decoration:none;padding:12px 22px;font-size:15px;border:0;cursor:pointer;line-height:1.3}
+  .btn-cta{background:var(--cta);color:#fff;box-shadow:0 4px 0 var(--cta-d)}
+  .btn-cta:hover{transform:translateY(1px);box-shadow:0 3px 0 var(--cta-d)}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-line{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+  .btn-sm{padding:9px 16px;font-size:14px}
+  @media(max-width:880px){.hd nav{display:none}}
+  @media(max-width:560px){.hd .btns{display:none}}
+
+  /* ファーストビュー */
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#15446b 58%,var(--blue) 100%);color:#fff;overflow:hidden;position:relative}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center;padding-top:56px;padding-bottom:64px}
+  @media(max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-top:36px;padding-bottom:44px}.hero-art{display:none}}
+  .tag{display:inline-flex;gap:6px;flex-wrap:wrap}
+  .tag span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:3px 12px;font-size:13px;font-weight:700}
+  .hero h1{font-size:clamp(28px,5.4vw,46px);line-height:1.35;margin:16px 0 14px;font-weight:900;letter-spacing:.01em}
+  .nw{white-space:nowrap;display:inline-block}
+  .hero h1 em{font-style:normal;color:#ffd166}
+  .hero p.lead{font-size:clamp(15px,2.2vw,17px);opacity:.92;margin:0 0 22px}
+  .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 24px}
+  @media(max-width:520px){.chips{grid-template-columns:1fr}}
+  .chip{background:#fff;color:var(--ink);border-radius:14px;padding:10px 14px;line-height:1.35}
+  .chip small{display:block;font-size:12px;color:var(--muted);font-weight:700}
+  .chip b{font-size:22px;font-weight:900;color:var(--navy)}
+  .chip b i{font-style:normal;font-size:13px;font-weight:700;margin-left:2px}
+  .chip.red b{color:var(--red)}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+  .hero .ctas .btn{padding:16px 26px;font-size:17px}
+  .hero .note{font-size:13px;opacity:.85;margin-top:12px}
+
+  /* チェック */
+  .check{max-width:760px;margin:0 auto;background:#fff;border:2px solid var(--sky2);border-radius:20px;padding:28px 28px 24px}
+  .check ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+  @media(max-width:640px){.check ul{grid-template-columns:1fr}.check{padding:22px 18px}}
+  .check li{display:flex;gap:10px;align-items:flex-start;font-weight:700}
+  .check li::before{content:"";flex:0 0 22px;height:22px;margin-top:4px;border-radius:6px;border:2px solid var(--blue);background:var(--sky) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%231769aa' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+  .check .res{margin:22px 0 0;text-align:center;background:var(--navy);color:#fff;border-radius:12px;padding:14px;font-weight:700}
+
+  /* メリット */
+  .merits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:860px){.merits{grid-template-columns:1fr}}
+  .merit{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;position:relative}
+  .merit .n{position:absolute;top:-14px;left:22px;background:var(--blue);color:#fff;font-weight:900;font-size:13px;border-radius:999px;padding:3px 12px}
+  .merit .ic{width:52px;height:52px;border-radius:14px;background:var(--sky);display:grid;place-items:center;margin-bottom:10px}
+  .merit h3{margin:0 0 6px;font-size:19px;color:var(--navy);line-height:1.5}
+  .merit p{margin:0;color:var(--muted);font-size:15px}
+
+  /* 天カセとは */
+  .diff{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  @media(max-width:860px){.diff{grid-template-columns:1fr}}
+  .diff h3{font-size:22px;color:var(--navy);margin:0 0 10px;line-height:1.5}
+  .parts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+  .parts div{background:var(--sky);border-radius:12px;padding:10px 14px;font-weight:700;font-size:14px}
+  .parts div small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+
+  /* 選ばれる理由 */
+  .reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:860px){.reasons{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.reasons{grid-template-columns:1fr}}
+  .reason{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--line)}
+  .reason b.no{font-size:13px;color:var(--blue);letter-spacing:.1em}
+  .reason h3{margin:2px 0 6px;font-size:18px;color:var(--navy);line-height:1.5}
+  .reason p{margin:0;font-size:15px;color:var(--muted)}
+
+  /* 料金 */
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+  @media(max-width:920px){.plans{grid-template-columns:1fr}}
+  .plan{background:#fff;border:2px solid var(--line);border-radius:20px;padding:26px 24px;display:flex;flex-direction:column}
+  .plan.main{border-color:var(--blue);box-shadow:0 10px 30px rgba(23,105,170,.12);position:relative}
+  .plan.main::before{content:"いちばん多いご依頼";position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:13px;font-weight:800;border-radius:999px;padding:3px 14px;white-space:nowrap}
+  .plan.urgent{border-color:#f3c1c1}
+  .plan .kind{font-size:13px;font-weight:800;color:var(--muted)}
+  .plan h3{font-size:20px;margin:2px 0 10px;color:var(--navy);line-height:1.45}
+  .plan .price{font-size:40px;font-weight:900;color:var(--navy);line-height:1.1}
+  .plan.urgent .price{color:var(--red)}
+  .plan .price small{font-size:14px;font-weight:700;margin-left:2px}
+  .plan .per{font-size:13px;color:var(--muted);margin:4px 0 14px}
+  .plan ul{list-style:none;padding:0;margin:0 0 14px}
+  .plan li{padding:6px 0 6px 26px;border-bottom:1px dashed var(--line);font-size:15px;position:relative}
+  .plan li::before{content:"✓";position:absolute;left:4px;color:var(--blue);font-weight:900}
+  .plan.urgent li::before{color:var(--red)}
+  .opts{background:var(--soft);border-radius:12px;padding:12px 14px;font-size:14px;margin-bottom:14px}
+  .opts div{display:flex;justify-content:space-between;gap:8px;padding:2px 0}
+  .opts div span:last-child{font-weight:700;white-space:nowrap}
+  .plan .fine{font-size:12px;color:var(--muted);margin:0 0 16px}
+  .plan .btn{margin-top:auto}
+  .regular{margin-top:22px;background:var(--navy);color:#fff;border-radius:20px;padding:26px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+  @media(max-width:720px){.regular{grid-template-columns:1fr}}
+  .regular h3{margin:0 0 4px;font-size:20px}
+  .regular p{margin:0;opacity:.9;font-size:15px}
+  .example{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+  .example h3{margin:0 0 8px;font-size:17px;color:var(--navy)}
+  .example table{width:100%;border-collapse:collapse;font-size:15px}
+  .example td{padding:8px 4px;border-bottom:1px dashed var(--line)}
+  .example td:last-child{text-align:right;font-weight:700;white-space:nowrap}
+  .example tr.total td{border-bottom:0;font-size:18px;color:var(--navy);font-weight:900}
+  .example p{font-size:12px;color:var(--muted);margin:8px 0 0}
+
+  /* 業種 */
+  .biz{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:920px){.biz{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.biz{grid-template-columns:1fr}}
+  .biz div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+  .biz h3{margin:0 0 6px;font-size:18px;color:var(--navy);display:flex;align-items:center;gap:8px}
+  .biz h3 span{font-size:24px}
+  .biz p{margin:0;font-size:14px;color:var(--muted)}
+
+  /* 流れ */
+  .flow{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+  @media(max-width:860px){.flow{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.flow{grid-template-columns:1fr}}
+  .flow li{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--line);counter-increment:s}
+  .flow li::before{content:"STEP " counter(s);display:inline-block;background:var(--sky);color:var(--blue);font-weight:900;font-size:12px;letter-spacing:.1em;border-radius:6px;padding:2px 10px;margin-bottom:6px}
+  .flow h3{margin:0 0 4px;font-size:17px;color:var(--navy)}
+  .flow p{margin:0;font-size:14px;color:var(--muted)}
+
+  /* ごあいさつ */
+  .greet{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:start;max-width:880px;margin:0 auto;background:#fff;border-radius:20px;padding:32px;border:1px solid var(--line)}
+  @media(max-width:720px){.greet{grid-template-columns:1fr;padding:24px}}
+  .greet .face{aspect-ratio:1;border-radius:50%;background:var(--sky);display:grid;place-items:center;max-width:200px;margin:0 auto}
+  .greet h3{margin:0 0 10px;font-size:20px;color:var(--navy)}
+  .greet p{margin:0 0 10px}
+  .greet .sign{font-weight:700;text-align:right}
+
+  /* FAQ */
+  .faq{max-width:820px;margin:0 auto}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+  .faq summary{list-style:none;cursor:pointer;padding:18px 52px 18px 56px;font-weight:700;position:relative}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::before{content:"Q";position:absolute;left:18px;top:15px;width:28px;height:28px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:900}
+  .faq summary::after{content:"＋";position:absolute;right:20px;top:17px;color:var(--blue);font-weight:900}
+  .faq details[open] summary::after{content:"－"}
+  .faq .a{padding:0 22px 18px 56px;color:var(--muted);position:relative}
+  .faq .a::before{content:"A";position:absolute;left:18px;top:0;width:28px;height:28px;border-radius:50%;background:var(--cta);color:#fff;display:grid;place-items:center;font-weight:900}
+
+  /* エリア・CTA */
+  .area{max-width:760px;margin:0 auto;text-align:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+  .area b{font-size:22px;color:var(--navy);display:block}
+  .final{background:linear-gradient(160deg,var(--navy),var(--blue));color:#fff;text-align:center}
+  .final h2{color:#fff}
+  .final .sub{color:rgba(255,255,255,.88)}
+  .final .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .final .ctas .btn{padding:18px 30px;font-size:18px}
+  .final .btn-line{background:transparent;color:#fff;border-color:#fff}
+  footer{background:#08192a;color:rgba(255,255,255,.7);font-size:13px;text-align:center;padding:26px 16px 96px}
+  footer b{color:#fff}
+
+  /* スマホ下の固定ボタン */
+  .fixbar{display:none}
+  @media(max-width:560px){
+    .fixbar{display:grid;grid-template-columns:1fr 1.4fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,255,255,.97);padding:8px 10px calc(8px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+    .fixbar .btn{padding:13px 8px;font-size:15px;border-radius:12px}
+    .sec{padding:56px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top">
+      <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="10" fill="#0d2b45"/><rect x="9" y="9" width="22" height="22" rx="3" fill="none" stroke="#fff" stroke-width="2.4"/><rect x="15" y="15" width="10" height="10" rx="1.5" fill="#ffd166"/><path d="M12 12l3 3M28 12l-3 3M12 28l3-3M28 28l-3-3" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+      <span><b>エアコン清掃救急隊</b><small>札幌・天カセ専門｜株式会社アロー</small></span>
+    </a>
+    <nav><a href="#reasons">選ばれる理由</a><a href="#price">料金</a><a href="#flow">作業の流れ</a><a href="#faq">よくある質問</a></nav>
+    <div class="btns">
+      <a class="btn btn-red btn-sm js-tel" href="#">☎ <span class="js-tel-num">お電話</span></a>
+      <a class="btn btn-cta btn-sm" href="apply.html">無料見積・申し込み</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="tag"><span>札幌の店舗・オフィス向け</span><span>天カセ専門</span><span>早朝・深夜も相談可</span></div>
+      <h1>天井のエアコン、<br><em class="nw">分解して</em><span class="nw">まるごと洗います。</span></h1>
+      <p class="lead">飲食店・美容室・オフィス・クリニックの天井カセットエアコン（天カセ）を、パネル・ファン・ドレンパン・フィルターまで取り外して洗浄。突然の水漏れ・ドレン詰まりにも駆けつけます。</p>
+      <div class="chips">
+        <div class="chip"><small>天カセ 分解洗浄</small><b><span data-price="tenkase">28,000</span><i>円〜/台</i></b></div>
+        <div class="chip red"><small>水漏れ 応急対応</small><b><span data-price="leak">16,500</span><i>円〜</i></b></div>
+        <div class="chip"><small>家庭用 壁掛け</small><b><span data-price="wall">12,000</span><i>円/台</i></b></div>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-cta" href="apply.html">無料で見積もりする ▶</a>
+        <a class="btn btn-red js-tel" href="#">💧 水漏れ・緊急は <span class="js-tel-num">お電話</span></a>
+      </div>
+      <p class="note">※料金はすべて税込の目安です。台数・汚れ・設置状況で変わる場合は、作業前にお見積りをお出しします。</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 320 300">
+        <rect x="0" y="0" width="320" height="46" fill="rgba(255,255,255,.08)"/>
+        <line x1="0" y1="46" x2="320" y2="46" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
+        <!-- 天カセ本体 -->
+        <rect x="70" y="46" width="180" height="22" rx="4" fill="#cfe3f2"/>
+        <rect x="60" y="66" width="200" height="16" rx="5" fill="#fff"/>
+        <rect x="118" y="70" width="84" height="8" rx="3" fill="#dfeaf3"/>
+        <!-- 取り外した部品 -->
+        <g transform="translate(22 150) rotate(-8)"><rect width="96" height="96" rx="10" fill="#fff"/><rect x="10" y="10" width="76" height="76" rx="6" fill="none" stroke="#9cc3e2" stroke-width="3"/><path d="M26 26h44M26 38h44M26 50h44M26 62h44M26 74h44" stroke="#c9dcec" stroke-width="3"/></g>
+        <g transform="translate(200 142)"><circle cx="48" cy="48" r="46" fill="#fff"/><circle cx="48" cy="48" r="12" fill="#1769aa"/><g stroke="#9cc3e2" stroke-width="7" stroke-linecap="round"><path d="M48 36V10"/><path d="M60 48h26"/><path d="M48 60v26"/><path d="M36 48H10"/><path d="M57 39l18-18"/><path d="M39 57L21 75"/><path d="M57 57l18 18"/><path d="M39 39L21 21"/></g></g>
+        <g transform="translate(118 222)"><path d="M0 8h84l-8 34H8z" fill="#fff"/><path d="M14 20h56" stroke="#9cc3e2" stroke-width="4" stroke-linecap="round"/></g>
+        <!-- 泡・しずく -->
+        <g fill="#ffd166"><circle cx="160" cy="118" r="7"/><circle cx="140" cy="136" r="4"/><circle cx="182" cy="134" r="5"/></g>
+        <path d="M160 88c-6 10-10 15-10 20a10 10 0 0 0 20 0c0-5-4-10-10-20z" fill="#7cc4f5"/>
+        <text x="30" y="142" fill="#fff" font-size="12" font-weight="700">パネル</text>
+        <text x="228" y="134" fill="#fff" font-size="12" font-weight="700">ファン</text>
+        <text x="122" y="288" fill="#fff" font-size="12" font-weight="700">ドレンパン</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">CHECK</span>
+    <h2>こんなこと、起きていませんか？</h2>
+    <p class="sub">お店や事務所のエアコン、最後にしっかり洗ったのはいつでしょうか。</p>
+    <div class="check">
+      <ul>
+        <li>冷房をつけると、すっぱい・カビっぽいニオイがする</li>
+        <li>吹き出し口のまわりが黒ずんでいる</li>
+        <li>設定温度を変えても、なかなか冷えない・暖まらない</li>
+        <li>天井からポタポタ水が落ちてくる</li>
+        <li>前より電気代が上がった気がする</li>
+        <li>前回いつ掃除したか、だれも覚えていない</li>
+      </ul>
+      <p class="res">ひとつでも当てはまったら、エアコンの中が汚れているサインかもしれません。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <span class="eyebrow">MERIT</span>
+    <h2>天カセを洗うと、<br>お店にいいことがあります。</h2>
+    <p class="sub">フィルターの掃除だけでは届かない奥の汚れを落とすと、変わるのは空気だけではありません。</p>
+    <div class="merits">
+      <div class="merit"><span class="n">メリット 1</span>
+        <div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round"><path d="M4 9c3-2 5 2 8 0s5-2 8 0M4 14c3-2 5 2 8 0s5-2 8 0M4 19c3-2 5 2 8 0s5-2 8 0"/></svg></div>
+        <h3>ニオイが消えて、<br>お店の印象がよくなる</h3>
+        <p>客席や施術スペースに流れる空気は、お店の印象そのもの。内部のカビ・ホコリを根こそぎ落として、ニオイのもとから断ちます。</p></div>
+      <div class="merit"><span class="n">メリット 2</span>
+        <div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>効きが戻り、<br>電気代のムダを減らす</h3>
+        <p>フィンやファンが汚れると、エアコンは余分に動いて電気を使います。洗って本来の力に戻すことで、効きの悪さとムダな電気代を抑えます。</p></div>
+      <div class="merit"><span class="n">メリット 3</span>
+        <div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+        <h3>水漏れ・故障を<br>営業中に起こさない</h3>
+        <p>天カセの水漏れは、ドレンパンや排水まわりの汚れ・詰まりから起こることがあります。定期的に洗って、営業中の突然のトラブルを防ぎます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap diff">
+    <div>
+      <span class="eyebrow" style="text-align:left">WHY SPECIALIST</span>
+      <h3>「エアコンはどこでも同じ」<br>ではありません。</h3>
+      <p>天カセは天井の中に本体があり、家庭用の壁掛けエアコンとは構造も汚れ方も違います。表面を拭くだけでは、奥にたまったカビやホコリは落ちません。</p>
+      <p>エアコン清掃救急隊は、<mark>天カセの分解洗浄に特化</mark>したプロ集団です。部品を一つひとつ取り外し、業種や設置環境に合わせた方法で、営業への影響を最小限に抑えて洗います。</p>
+    </div>
+    <div>
+      <p style="font-weight:700;margin:0 0 4px;color:var(--navy)">取り外して洗う部品</p>
+      <div class="parts">
+        <div>化粧パネル<small>外装を洗浄し拭き上げ</small></div>
+        <div>ファン<small>カビ・ホコリがたまりやすい</small></div>
+        <div>ドレンパン<small>高圧洗浄で水漏れを予防</small></div>
+        <div>アルミフィン<small>洗浄して除菌</small></div>
+        <div>フィルター<small>目詰まりを解消</small></div>
+        <div>吹き出し口<small>黒ずみを落とす</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="reasons">
+  <div class="wrap">
+    <span class="eyebrow">REASON</span>
+    <h2>店舗・法人様に選ばれる<br>6つの理由</h2>
+    <p class="sub">単なる掃除ではなく、トラブルの原因を見極めて、快適な空気を長く保てるようにします。</p>
+    <div class="reasons">
+      <div class="reason"><b class="no">REASON 01</b><h3>天カセ専門のプロ</h3><p>店舗・事務所・クリニックなど、数多くの現場で経験を積んできました。天カセ専門だからこそできる品質を追求しています。</p></div>
+      <div class="reason"><b class="no">REASON 02</b><h3>分解してまるごと洗浄</h3><p>パネル・ファン・ドレンパン・フィルターまで細部を取り外して洗浄。目に見えないカビやホコリまで落とします。</p></div>
+      <div class="reason"><b class="no">REASON 03</b><h3>営業を止めない時間に</h3><p>早朝・深夜・休日の作業もご相談ください。開店前や閉店後に作業して、お店の営業に影響を出しません。</p></div>
+      <div class="reason"><b class="no">REASON 04</b><h3>水漏れにも即対応</h3><p>ドレン詰まりの解消・簡易点検・応急処置から、本格的な洗浄・メンテナンスまでワンストップで対応します。</p></div>
+      <div class="reason"><b class="no">REASON 05</b><h3>作業報告書をメールで</h3><p>作業内容をまとめた報告書をメールでお送りします。オーナー様や本部、管理会社への報告にもお使いください。</p></div>
+      <div class="reason"><b class="no">REASON 06</b><h3>損害保険に加入</h3><p>万一に備えて損害保険に加入しています。作業の内容や汚れの状態は、わかりやすくご説明します。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="price">
+  <div class="wrap">
+    <span class="eyebrow">PRICE</span>
+    <h2>料金とサービス</h2>
+    <p class="sub">すべて税込の目安です。台数や設置状況に合わせて、いちばんよい方法をご提案します。<br>お見積りは無料です。</p>
+    <div class="plans">
+      <div class="plan main">
+        <span class="kind">店舗・オフィス向け</span>
+        <h3>業務用 天カセ・天吊エアコン<br>分解洗浄</h3>
+        <div class="price"><span data-price="tenkase">28,000</span><small>円〜</small></div>
+        <div class="per">1台あたり（税込）／作業時間 約3時間</div>
+        <ul>
+          <li>天井カセット分解洗浄一式</li>
+          <li>ドレンパン高圧洗浄</li>
+          <li>アルミフィン洗浄と除菌</li>
+          <li>外装パネル洗浄と拭き上げ</li>
+        </ul>
+        <div class="opts">
+          <div><span>防カビ仕上げ</span><span>＋<span data-price="tenkaseCoat">5,000</span>円</span></div>
+          <div><span>室外機（省エネ効果に期待）</span><span>＋<span data-price="tenkaseOutdoor">8,000</span>円</span></div>
+          <div><span>2台以上のご依頼</span><span>1台あたり <span data-price="tenkaseMulti">2,000</span>円引き</span></div>
+        </div>
+        <p class="fine">※標準能力（4方向 3.0馬力程度まで）・通常汚れの目安です。厨房やひどい汚れはご相談ください。</p>
+        <a class="btn btn-cta" href="apply.html?type=estimate">この内容で見積もりする</a>
+      </div>
+      <div class="plan urgent">
+        <span class="kind" style="color:var(--red)">トラブルのとき</span>
+        <h3>水漏れ・ドレン詰まり<br>応急対応</h3>
+        <div class="price"><span data-price="leak">16,500</span><small>円〜</small></div>
+        <div class="per">1回あたり（税込）</div>
+        <ul>
+          <li>ドレン詰まりの解消・応急処置</li>
+          <li>簡易動作確認と温度チェック</li>
+          <li>軽微故障点検</li>
+          <li>作業報告書のメール送付</li>
+          <li>深夜・早朝の作業も相談可</li>
+        </ul>
+        <p class="fine">※札幌市内・営業時間内の出張基本料金です。天井内部の腐食や配管工事をともなう場合は、現地で確認してから別途お見積りします。</p>
+        <a class="btn btn-red js-tel" href="#">☎ <span class="js-tel-num">お電話</span> で相談</a>
+      </div>
+      <div class="plan">
+        <span class="kind">ご家庭向け</span>
+        <h3>家庭用 壁掛けエアコン<br>分解洗浄</h3>
+        <div class="price"><span data-price="wall">12,000</span><small>円</small></div>
+        <div class="per">1台あたり（税込）／作業時間 約1時間〜</div>
+        <ul>
+          <li>基本の分解洗浄</li>
+          <li>水漏れ・冷えの悪さもご相談ください</li>
+          <li>早朝・深夜も対応可能</li>
+        </ul>
+        <div class="opts">
+          <div><span>お掃除ロボ機能付き</span><span>＋<span data-price="wallAuto">7,000</span>円</span></div>
+          <div><span>防カビ仕上げ</span><span>＋<span data-price="wallCoat">3,000</span>円</span></div>
+          <div><span>室外機（省エネ効果に期待）</span><span>＋<span data-price="wallOutdoor">5,000</span>円</span></div>
+          <div><span>2台以上のご依頼</span><span>1台あたり <span data-price="wallMulti">1,000</span>円引き</span></div>
+        </div>
+        <a class="btn btn-line" href="apply.html?type=estimate">見積もり・申し込み</a>
+      </div>
+    </div>
+
+    <div class="example">
+      <h3>料金の計算例：飲食店で天カセ3台＋防カビ仕上げ</h3>
+      <table>
+        <tr><td>天カセ分解洗浄 3台（2台以上で1台あたり2,000円引き）</td><td>26,000円 × 3台 ＝ 78,000円</td></tr>
+        <tr><td>防カビ仕上げ 3台</td><td>5,000円 × 3台 ＝ 15,000円</td></tr>
+        <tr class="total"><td>合計の目安</td><td>93,000円（税込）</td></tr>
+      </table>
+      <p>※申し込みページで台数とオプションを選ぶと、その場で概算が出ます。</p>
+    </div>
+
+    <div class="regular">
+      <div><h3>定期清掃プランもご用意しています</h3><p>台数や設置環境に合わせた年間のお手入れ計画をご提案します。複数台・定期契約はボリューム割引にも対応します。</p></div>
+      <a class="btn btn-cta" href="apply.html?type=regular">定期プランを相談する</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <span class="eyebrow">INDUSTRY</span>
+    <h2>業種に合わせて作業します</h2>
+    <p class="sub">お店ごとに、汚れ方も「止められない時間」も違います。</p>
+    <div class="biz">
+      <div><h3><span>🍽</span>飲食店</h3><p>油やニオイがつきやすい客席・厨房まわり。仕込み前や閉店後に作業して、営業を止めません。</p></div>
+      <div><h3><span>✂️</span>美容室・サロン</h3><p>お客様の顔のすぐ近くに風が当たるお店だからこそ、清潔な空気を。定休日の作業もご相談ください。</p></div>
+      <div><h3><span>🏢</span>オフィス・事務所</h3><p>休日や業務時間外に作業して、仕事の手を止めずに洗浄します。複数台はまとめて割引。</p></div>
+      <div><h3><span>🏥</span>クリニック</h3><p>待合室や診察室の空気を清潔に。診療時間外の作業で、患者様にご迷惑をおかけしません。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="flow">
+  <div class="wrap">
+    <span class="eyebrow">FLOW</span>
+    <h2>お問い合わせから作業完了まで</h2>
+    <p class="sub">はじめての方にも、一つひとつ説明しながら進めます。</p>
+    <ol class="flow">
+      <li><h3>無料見積のお申し込み</h3><p>エアコンの台数・機種・設置場所（客席・厨房・バックヤードなど）・ご希望日時をお知らせください。</p></li>
+      <li><h3>概算と日程のご連絡</h3><p>概算費用と訪問日時の候補を折り返しご連絡します。早朝・深夜・休日もご相談ください。</p></li>
+      <li><h3>養生（まわりを保護）</h3><p>客席・床・商品などが汚れたり濡れたりしないよう、しっかり保護してから作業します。</p></li>
+      <li><h3>分解・高圧洗浄</h3><p>パネル・ファン・ドレンパン・フィルターを取り外し、専用の機材でカビやホコリを洗い流します。</p></li>
+      <li><h3>組み立て・試運転</h3><p>元どおりに組み立て、動作確認と温度チェックを行います。</p></li>
+      <li><h3>作業報告書をメールで</h3><p>作業内容をまとめた報告書をメールでお送りします。気になる点があれば、その場でご相談ください。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <span class="eyebrow">MESSAGE</span>
+    <h2>ごあいさつ</h2>
+    <div class="greet">
+      <div class="face" aria-hidden="true"><svg width="110" height="110" viewBox="0 0 24 24" fill="none" stroke="#1769aa" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
+      <div>
+        <h3>安心して任せていただける対応を、いちばん大切にしています。</h3>
+        <p>エアコン清掃救急隊の和田と申します。東京のハウスクリーニングの会社で、エアコンクリーニングのチームリーダーを5年間務めてきました。</p>
+        <p>独立してからは札幌で、地域に根ざして一件一件ていねいに作業することを心がけています。エアコンをきれいにするだけでなく、小さな疑問やご相談にもていねいにお答えし、気持ちよくご利用いただけるよう努めます。</p>
+        <p>急な水漏れなどのご相談も、お気軽にお問い合わせください。</p>
+        <p class="sign">エアコン清掃救急隊　和田</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <span class="eyebrow">FAQ</span>
+    <h2>よくあるご質問</h2>
+    <div class="faq" style="margin-top:28px">
+      <details><summary>営業中でも作業できますか？</summary><div class="a">まわりを養生して作業しますが、水や音が出るため、開店前・閉店後・定休日の作業をおすすめしています。早朝・深夜もご相談ください。</div></details>
+      <details><summary>1台あたり、どれくらい時間がかかりますか？</summary><div class="a">天カセは1台約3時間、家庭用の壁掛けエアコンは約1時間〜が目安です。汚れや設置状況によって前後します。</div></details>
+      <details><summary>見積もりにお金はかかりますか？</summary><div class="a">無料です。台数・機種・設置場所・ご希望日時をお知らせいただければ、概算費用と訪問日時の候補を折り返しご連絡します。</div></details>
+      <details><summary>何台もある場合、割引はありますか？</summary><div class="a">天カセは2台以上で1台あたり2,000円、家庭用は2台以上で1台あたり1,000円お安くなります。定期契約の場合はボリューム割引にも対応します。</div></details>
+      <details><summary>天井から水が漏れてきました。すぐ来てもらえますか？</summary><div class="a">まずはご連絡ください。札幌市内を中心に、急ぎのご依頼にも柔軟に駆けつけます。応急対応は1回16,500円〜（札幌市内・営業時間内の基本料金）です。</div></details>
+      <details><summary>表示の料金より高くなることはありますか？</summary><div class="a">表示は標準的な能力・通常の汚れの場合の目安です。厨房などで汚れがひどい場合や、天井内部の腐食・配管工事が必要な場合は、現地で確認してからお見積りをお出しします。</div></details>
+      <details><summary>家のエアコンもお願いできますか？</summary><div class="a">はい。家庭用の壁掛けエアコンは1台12,000円です。お掃除ロボ機能付きや室外機の洗浄もご相談ください。</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <span class="eyebrow">AREA</span>
+    <h2>対応エリア</h2>
+    <div class="area" style="margin-top:24px"><b>札幌市</b><p class="js-area" style="margin:6px 0 0;color:var(--muted)"></p></div>
+  </div>
+</section>
+
+<section class="sec final">
+  <div class="wrap">
+    <h2>まずは無料のお見積りから</h2>
+    <p class="sub">台数とオプションを選ぶだけで、その場で概算がわかります。<br>水漏れなどお急ぎの方はお電話ください。</p>
+    <div class="ctas">
+      <a class="btn btn-cta" href="apply.html">無料見積・お申し込み ▶</a>
+      <a class="btn btn-line js-tel" href="#">☎ <span class="js-tel-num">お電話</span></a>
+    </div>
+  </div>
+</section>
+
+<footer><b>エアコン清掃救急隊</b>（株式会社アロー）<br>札幌の天井カセットエアコン分解洗浄・水漏れトラブル対応<br>© 株式会社アロー</footer>
+
+<div class="fixbar">
+  <a class="btn btn-red js-tel" href="#">☎ 電話</a>
+  <a class="btn btn-cta" href="apply.html">無料見積・申し込み</a>
+</div>
+
+<script src="config.js"></script>
+</body>
+</html>
